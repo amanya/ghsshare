@@ -18,6 +18,12 @@ usage: ghsshare [flags] [username]
     	The private key file used to decrypt (default "~/.ssh/id_rsa")
 ```
 
+You can do something like:
+
+```
+$ echo "secret" | ghsshare amanya | ghsshare --decrypt
+```
+
 ## Limits
 
 The RSA cryptosystem is designed for passing encrypted shared keys so it has
